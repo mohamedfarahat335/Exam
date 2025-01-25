@@ -156,6 +156,10 @@ namespace Exam
             // Assign exam to subject
             math.CreateExam(finalExam);
 
+            // Display exam
+            Console.WriteLine(math);
+            math.SubjectExam.ShowExam();
+
         }
     }
 }
