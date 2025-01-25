@@ -139,6 +139,11 @@ namespace Exam
 
             // Create an exam
             FinalExam finalExam = new FinalExam(90, 2);
+
+            // Add questions (True or False)
+            var q1 = new TrueOrFalseQuestion("Q1", "The earth is flat.", 5);
+            q1.RightAnswerId = 2;
+            finalExam.Questions.Add(q1);
         }
     }
 }
