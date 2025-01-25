@@ -48,6 +48,19 @@ namespace Exam
         }
     }
 
+    // Answer class
+    public class Answer
+    {
+        public int AnswerId_ans { get; set; }
+        public string AnswerText_ans { get; set; }
+
+        public Answer(int id, string text)
+        {
+            AnswerId_ans = id;
+            AnswerText_ans = text;
+        }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
