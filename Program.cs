@@ -78,6 +78,21 @@ namespace Exam
         public abstract void ShowExam();
     }
 
+    // Derived Final Class 
+    public class FinalExam : Exam
+    {
+        public FinalExam(int time, int numberOfQuestions) : base(time, numberOfQuestions) { }
+
+        public override void ShowExam()
+        {
+            foreach (var question in Questions)
+            {
+                question.DisplayQuestion();
+            }
+        }
+    }
+
+
     internal class Program
     {
         static void Main(string[] args)
