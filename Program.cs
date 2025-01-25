@@ -153,6 +153,9 @@ namespace Exam
             q2.RightAnswerId = 2;
             finalExam.Questions.Add(q2);
 
+            // Assign exam to subject
+            math.CreateExam(finalExam);
+
         }
     }
 }
