@@ -91,7 +91,20 @@ namespace Exam
             }
         }
     }
+    // Derived practical Exam
+    public class PracticalExam : Exam
+    {
+        public PracticalExam(int time, int numberOfQuestions) : base(time, numberOfQuestions) { }
 
+        public override void ShowExam()
+        {
+            foreach (var question in Questions)
+            {
+                question.DisplayQuestion();
+                Console.WriteLine($"Right Answer: {question.RightAnswerId}\n");
+            }
+        }
+    }
 
     internal class Program
     {
