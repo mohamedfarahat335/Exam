@@ -129,11 +129,14 @@ namespace Exam
             return $"Subject: {SubjectName} (ID: {SubjectId})";
         }
     }
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Create a subject
+            Subject math = new Subject(1, "Mathematics");
+
         }
     }
 }
