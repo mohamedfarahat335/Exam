@@ -144,6 +144,15 @@ namespace Exam
             var q1 = new TrueOrFalseQuestion("Q1", "The earth is flat.", 5);
             q1.RightAnswerId = 2;
             finalExam.Questions.Add(q1);
+
+            // Add questions (MCQ)
+            var q2 = new MCQQuestion("Q2", "What is 2+2?", 10);
+            q2.Answers.Add(new Answer(1, "3"));
+            q2.Answers.Add(new Answer(2, "4"));
+            q2.Answers.Add(new Answer(3, "5"));
+            q2.RightAnswerId = 2;
+            finalExam.Questions.Add(q2);
+
         }
     }
 }
