@@ -137,6 +137,8 @@ namespace Exam
             // Create a subject
             Subject math = new Subject(1, "Mathematics");
 
+            // Create an exam
+            FinalExam finalExam = new FinalExam(90, 2);
         }
     }
 }
